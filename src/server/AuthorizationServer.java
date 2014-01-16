@@ -7,8 +7,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 
 import service.interfaces.IAuthService;
-import service.interfaces.register.IRegisterService;
-import service.interfaces.sign.ISignInService;
+
 
 public class AuthorizationServer extends UnicastRemoteObject implements IAuthService{
 
