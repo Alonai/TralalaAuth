@@ -1,12 +1,10 @@
-package server;
+package service.interfaces;
 
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
-
-import service.interfaces.IAuthService;
 
 
 public class AuthorizationServer extends UnicastRemoteObject implements IAuthService{

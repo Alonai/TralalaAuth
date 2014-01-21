@@ -28,7 +28,7 @@
     </target>	
     
 	<target name="server" depends="build" description="Runs the Server">
-		<java classname="server.AuthorizationServer" classpath="${classpath}" fork="true">
+		<java classname="service.interfaces.AuthorizationServer" classpath="${classpath}" fork="true">
 			<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>			
         	<arg value="${server.IP}"/> 
