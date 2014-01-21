@@ -55,6 +55,7 @@ public class AuthorizationServer extends UnicastRemoteObject implements IAuthSer
 		try{
 			IAuthService authSer= new AuthorizationServer();
 			Naming.rebind(name, authSer);
+			authSer.createUser("fanta", "fanta");
 			System.out.println("$ Server '" + name + "'active and waiting");
 		}catch(Exception e){
 			System.err.print("$ Exception running server: " + e.getMessage());
